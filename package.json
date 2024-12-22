@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "@create-figma-plugin/ui": "^3.2.1",
+    "@create-figma-plugin/utilities": "^3.2.1",
+    "preact": ">=10"
+  },
+  "devDependencies": {
+    "@create-figma-plugin/build": "^3.2.1",
+    "@create-figma-plugin/tsconfig": "^3.2.1",
+    "@figma/plugin-typings": "1.100.2",
+    "typescript": ">=4"
+  },
+  "scripts": {
+    "build": "build-figma-plugin --typecheck --minify",
+    "watch": "build-figma-plugin --typecheck --watch"
+  },
+  "figma-plugin": {
+    "editorType": [
+      "figma"
+    ],
+    "id": "preact-resizable",
+    "name": "Preact Resizable",
+    "main": "src/main.ts",
+    "ui": "src/ui.tsx"
+  }
+}
